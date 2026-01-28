@@ -19,7 +19,11 @@ app.use(
   cors({
     origin: [
       "https://www.foodforcomrade.com",
-      "https://foodforcomrade.com"
+      "https://foodforcomrade.com",
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "http://127.0.0.1:3000",
+      "http://127.0.0.1:3001"
     ],
     methods: ["GET", "POST"],
     credentials: true,
