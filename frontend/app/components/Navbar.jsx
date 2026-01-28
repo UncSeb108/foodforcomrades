@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaHandHoldingHeart } from "react-icons/fa";
-import Image from "next/image"; // Import Next.js Image component
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -73,12 +72,10 @@ const Navbar = () => {
           <div className="relative w-10 h-10">
             {" "}
             {/* Container for the rounded image */}
-            <Image
-              src="/images/logo.jpeg"
+            <img
+              src="/images/Final food for comrades logo.pdf"
               alt="Feed A Comrade Logo"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full" // Apply rounded-full for circular image
+              className="w-full h-full object-cover rounded-full" // Apply rounded-full for circular image
             />
           </div>
           <span className="text-white text-2xl font-bold">FeedAComrade</span>
