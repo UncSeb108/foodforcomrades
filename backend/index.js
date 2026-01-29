@@ -16,6 +16,7 @@ const app = express();
 // Middleware
 app.use(helmet());
 // CORS configuration for development and production
+// Last updated: 2026-01-29 15:12
 app.use(
   cors({
     origin: true, // Allow all origins temporarily to eliminate CORS issues
