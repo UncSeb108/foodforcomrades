@@ -15,6 +15,7 @@ const app = express();
 
 // Middleware
 app.use(helmet());
+// CORS configuration for development and production
 app.use(
   cors({
     origin: [
