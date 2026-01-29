@@ -81,7 +81,9 @@ const callbackHandler = async (req, res) => {
     } catch (smsError) {
       console.warn("Failed to send SMS:", smsError.message || smsError);
     }
+
     console.log("Donation processed successfully");
+
     // Respond with downloadable receipt URL
     return res.status(200).json({
       message: "Donation saved and receipt generated.",
